@@ -41,14 +41,14 @@ const Post = ({ postData, showComments }) => {
         </div>
         <h4 className='my-2'>{postData.post}</h4>
         {postData.tags.map((tag) => (
-          <span key={tag} class='badge bg-info mx-1'>
+          <span key={tag} class='text-capitalize badge bg-info mx-1'>
             {tag}
           </span>
         ))}
         <p className='my-2'>{postData.postDescription}</p>
       </div>
       <hr />
-      <div className='d-flex justify-content-between'>
+      <div className='d-flex justify-content-between m-2'>
         <Link className='text-info' to={`/${postData.postId}`}>
           <i class='bi bi-chat-left-fill'></i>
         </Link>
@@ -60,7 +60,8 @@ const Post = ({ postData, showComments }) => {
           }`}
         ></i>
       </div>
-      <div className='my-1'>
+
+      <div className='bg-light'>
         {showComments
           ? postData.comments.map((comment) => (
               <div className='my-2'>
