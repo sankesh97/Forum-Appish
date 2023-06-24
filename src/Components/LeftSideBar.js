@@ -6,7 +6,7 @@ const LeftSideBar = () => {
   const { forumState } = useContext(ForumContext);
 
   return (
-    <div className=' d-flex flex-column justify-content-between'>
+    <div className=' d-flex flex-column justify-content-between h-100'>
       <ul className='nav flex-column'>
         <li className='nav-item'>
           <NavLink

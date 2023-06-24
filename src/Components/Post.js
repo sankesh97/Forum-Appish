@@ -34,10 +34,7 @@ const Post = ({ postData, showComments }) => {
             style={{ width: '30px', height: 'auto' }}
             alt='Profile Img'
           />
-
-          <p className='d-inline mx-2'>
-            Posted by @{postData.username} <i class='bi bi-dot'></i>
-          </p>
+          <p className='d-inline mx-2'>Posted by @{postData.username}</p>
         </div>
         <h4 className='my-2'>{postData.post}</h4>
         {postData.tags.map((tag) => (
