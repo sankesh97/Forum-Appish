@@ -9,7 +9,7 @@ const SinglePost = () => {
 
   useEffect(() => {
     getPostData(postsId);
-  }, []);
+  }, [getPostData, postsId]);
 
   return (
     <div className='row'>
